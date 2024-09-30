@@ -25,11 +25,11 @@
   $nom = 'Marcos';
   $ape = "Berrocal";
 //Concatenación
-  echo "$nombre$ape" //MarcosBerrocal
-  echo '$nombre$ape' //$nombre$ape
-  echo "$nombre $ape" //Marcos Berrocal
-  echo "$nombre.$ape" //MarcosBerrocal (El . concatena)
-  echo $nombre.' '.$ape //Marcos Berrocal
+  echo "$nombre$ape"; //MarcosBerrocal
+  echo '$nombre$ape'; //$nombre$ape
+  echo "$nombre $ape"; //Marcos Berrocal
+  echo "$nombre.$ape";//MarcosBerrocal (El . concatena)
+  echo $nombre.' '.$ape; //Marcos Berrocal
 ?>
 
 //Bucle For
@@ -47,6 +47,7 @@ echo "<br>";
 
 //Bucle While
 
+<?php
 $valor=100;
 $inicio=1;
 while ($incio<=$valor){
@@ -54,7 +55,7 @@ while ($incio<=$valor){
   echo "<br>";
   $incio++;
 }
-
+?>
 
 
 
