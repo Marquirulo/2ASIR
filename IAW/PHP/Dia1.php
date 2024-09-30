@@ -30,6 +30,8 @@
   echo "$nombre $ape"; //Marcos Berrocal
   echo "$nombre.$ape";//MarcosBerrocal (El . concatena)
   echo $nombre.' '.$ape; //Marcos Berrocal
+  echo "Hola".(1*2)."<br>" //Hola2
+
 ?>
 
 //Bucle For
