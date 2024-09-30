@@ -33,12 +33,33 @@
 ?>
 
 //Bucle For
-for($f=1;$f<=100;$f++)
-primero declara variable
-Luego condicion
-Y luego "Consecuencia"
+<?php
+//for($f=1;$f<=100;$f++)
+//primero declara variable
+//Luego condicion
+//Y luego "Consecuencia"
 
 for($f=1;$f<=100;$f++){
 echo $f;
 echo "<br>";
 }
+?>
+
+//Bucle While
+
+$valor=100;
+$inicio=1;
+while ($incio<=$valor){
+  echo $inicio;
+  echo "<br>";
+  $incio++;
+}
+
+
+
+
+
+
+
+
+
