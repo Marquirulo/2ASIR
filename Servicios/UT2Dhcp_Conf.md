@@ -13,7 +13,7 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
     4. Editar el fichero /etc/dhcp/dhcpd.conf
 
 
-- Añadir configuración dhcp:
+    Añadir configuración dhcp:
   
   ![imagen](https://github.com/user-attachments/assets/f6705917-80ed-4a4e-826a-05111f2b3eac)
 
