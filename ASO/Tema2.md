@@ -107,4 +107,4 @@ sudo systemctl set-default graphical.target **# Despliega multiusuario con GUI p
 sudo systemctl start graphical.target **# Despliega de forma temporal la GUI** 
 runlevel **# Indica el nivel de ejecución actual**  
 telinit *n* **# Modifica el nivel de ejecución (1=rescue mode, 3=CLI-Multiuser, 5=GUI)**  
-🇪🇸
+🇪🇸_____🇪🇸
