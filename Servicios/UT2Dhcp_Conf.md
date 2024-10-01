@@ -28,9 +28,10 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
 6. En “debian cliente”, bajar y subir la tarjeta
     
       **#ifdown ens32**
+   
       **#ifup ens32**
       
-7. Comprobar la ip de “debian cliente”
+8. Comprobar la ip de “debian cliente”
  
   ![imagen](https://github.com/user-attachments/assets/91dea5a8-2729-4b62-b736-bb4d20a3eb8d)
 
