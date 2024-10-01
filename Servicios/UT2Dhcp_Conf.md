@@ -7,8 +7,8 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
         #apt install isc-dhcp-server
     3. Asignar el interfaz para el servicio dhcp:
 
-- Indicar el fichero:/etc/default/isc-dhcp-server
-- Indicar el nombre del  interfaz:INTERFACESv4=”ens34” (La que esta en modo Bridge)
+        Indicar el fichero:/etc/default/isc-dhcp-server
+        Indicar el nombre del  interfaz:INTERFACESv4=”ens34” (La que esta en modo Bridge)
 
     4. Editar el fichero /etc/dhcp/dhcpd.conf
 
