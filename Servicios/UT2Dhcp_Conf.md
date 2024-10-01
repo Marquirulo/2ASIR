@@ -26,5 +26,9 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
  
   ![imagen](https://github.com/user-attachments/assets/91dea5a8-2729-4b62-b736-bb4d20a3eb8d)
 
+    8. UBUNTU DHCP
+  ![imagen](https://github.com/user-attachments/assets/77b57914-dc61-48a8-999b-ab7bbd3a3cb2)
+
+
 
 
