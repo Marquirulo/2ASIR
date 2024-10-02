@@ -58,6 +58,17 @@ while ($incio<=$valor){
   $incio++;
 }
 ?>
+//Forms
+
+Form method="post" action="pagina2.php"
+
+input type="text" name="nombre"
+input type="submit" value="enviar"
+
+<?php
+echo $_REQUEST['nombre']
+
+?>
 
 
 
