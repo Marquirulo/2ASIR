@@ -38,6 +38,8 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
 8. UBUNTU DHCP
   ![imagen](https://github.com/user-attachments/assets/77b57914-dc61-48a8-999b-ab7bbd3a3cb2)
 
+# IP FIJA
 
+![Selección_008](https://github.com/user-attachments/assets/34f47c16-daa4-40ae-abd2-3feb1858ae90)
 
 
