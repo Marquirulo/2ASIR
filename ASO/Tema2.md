@@ -22,7 +22,7 @@
 |   \\_ -p *pid* |
 |   \\_ --sort=*opcion* | **# Facilita el ordenar** |
 |   \\_ --forest | **# Formato tree** |
-|   \\_ -o *opcion1, opcion2...* | **# Permite sacar los campos específicos (como el cut)** |
+|   \\_ -o *opcion1, opcion2...* | **# Permite sacar los campos específicos (como el cut), la opcion PSR muetra el core de ejecución** |
 |   \\_ --ppid *PID* | **# Muestra todos los hijos del PID indicado** |
 |   \\_ -L | **# Junto a -p *pid* muestra los threads (LWP) del proceso indicado** |
 | pstree    |
@@ -35,9 +35,9 @@
 |   \\_ -u | **# User cambia la prioridad para los procesos del usuario especificado** |
 | fg   |
 | bg   |
-| command **&**   |
+| *command* **&**   |
 | jobs   | **# Muestra los trabajos en 2º plano**   |
-| nohup command & | **# Reenvia la salida a otro lugar (Por DF nohup.out)   protegiendolos de apagados o desconexiones**   |
+| nohup *command* & | **# Reenvia la salida a otro lugar (Por DF nohup.out)   protegiendolos de apagados o desconexiones**   |
 | yes   |
 | CTRL-C   | **# Mata el proceso**   |
 | CTRL-Z   | **# Detiene el proceso**   |
@@ -69,11 +69,11 @@
 | kill *PID* |
 |   \\_  -l | **# Lista las distintas señales que puedes mandar al proceso** |
 |   \\_  *n* | **# Indica la señal que quieres envíar al proceso** |
-| killall command | **# Mata todos los procesos correspondientes al comando** |
-| pkill command | **# Es como kill pero permite busquedas por nombre (a modo pgrep o killall)**   |
-| pgrep command | **# Permite busquedas por nombre**   |
+| killall *command* | **# Mata todos los procesos correspondientes al comando** |
+| pkill *command* | **# Es como kill pero permite busquedas por nombre (a modo pgrep o killall)**   |
+| pgrep *command* | **# Permite busquedas por nombre**   |
 |   \\_ -u *usuario*| **# Filtra por usuario**|
-| pidof command | **# Saca todos los PID asociados al comando (a modo pgrep)**|
+| pidof *command* | **# Saca todos los PID asociados al comando (a modo pgrep)**|
 
 # Planificación de tareas
 | COMANDO  | EXPLICACION  |
@@ -102,9 +102,21 @@
 ```
 
 # Niveles de ejecución
-sudo systemctl set-default multi-user.target **# Despliega multiusuario sin GUI por DF**  
-sudo systemctl set-default graphical.target **# Despliega multiusuario con GUI por DF**  
-sudo systemctl start graphical.target **# Despliega de forma temporal la GUI** 
+sudo systemctl set-default multi-user.target **# Despliega multiusuario sin GUI por DF**   
+sudo systemctl set-default graphical.target **# Despliega multiusuario con GUI por DF**   
+sudo systemctl start graphical.target **# Despliega de forma temporal la GUI**  
 runlevel **# Indica el nivel de ejecución actual**  
 telinit *n* **# Modifica el nivel de ejecución (1=rescue mode, 3=CLI-Multiuser, 5=GUI)**  
-🇪🇸_____🇪🇸
+
+# Afinidad en Linux
+| COMANDO  | EXPLICACION  |
+|----------|--------------|
+| taskset *programa* | **#** |
+| \\_ -c *n,n,...* | **# Lanza el programa en los cores indicados en -c (con -p relanza el proceso a esos cores)** |
+| \\_ -p *pid* | **# Muestra la máscara del PID** |
+| \\_ 0x*n* | **# Se puede concretar la máscara directamente en hexadecimal** |
+| numactl | **#** |
+| \\_ -H | **# Muestra nº de nodos (CPU) y nº de cores** |
+| \\_ -C | **#**|
+
+## PATH=$PATH:/home/alumnotd/scriptsASO para que coja los scripts y los pille como "comandos del sistema"
