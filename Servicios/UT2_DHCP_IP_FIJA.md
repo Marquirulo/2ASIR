@@ -29,6 +29,8 @@
        
 7.En “debian servidor”, añadir “ubuntu” al dhcp para asignarle ip fija (10.x.y.3), comprobar ip en "ubuntu"
 
+**#nano /etc/dhcp/dhcpd.conf**
+
  ![imagen](https://github.com/user-attachments/assets/4db01d9d-bfa1-4073-93cd-d15ebcd286e3)
 
 8.Ver la configuración del dns
@@ -38,7 +40,6 @@
 ![imagen](https://github.com/user-attachments/assets/8b58fa40-5945-4eff-b7e2-f537ffcb50ef)
 
 ## UBUNTU
-
 
 1.En Ubuntu desactivar la tarjeta
 
