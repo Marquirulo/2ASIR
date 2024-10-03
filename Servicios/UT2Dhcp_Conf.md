@@ -40,6 +40,8 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
 
 # IP FIJA
 
+/etc/dhcp/dhcpd.conf
+
 ![Selección_008](https://github.com/user-attachments/assets/34f47c16-daa4-40ae-abd2-3feb1858ae90)
 
 
