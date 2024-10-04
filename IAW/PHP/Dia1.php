@@ -59,17 +59,31 @@ while ($incio<=$valor){
 }
 ?>
 //Forms
-
-Form method="post" action="pagina2.php"
-
-input type="text" name="nombre"
-input type="submit" value="enviar"
-
+html:
+#Importante
+<form method="post" action="form2.php">
+  
+		<h3>Ingrese peso: <h3> 
+		<input type="text" name="peso">
+		<h3>Ingrese altura: <h3> 
+		<input type="text" name="altura">
+		<input type="submit" value="enviar">
+	</form>
+form2.php:
 <?php
-echo $_REQUEST['nombre']
+		echo "IMC:".($_REQUEST['peso']/pow($_REQUEST['altura'],2));
+
+		
+		if ($_REQUEST['altura'] > 1.80) {
+			echo "Eres alto ";
+		} else {
+			echo "Eres bajo ";
+		}
 
 ?>
 
+Para el boton radio $_REQUEST['radio1']=="resta" /////// $_REQUEST['radio1']=="suma"
+      
 
 
 
