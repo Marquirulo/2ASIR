@@ -79,13 +79,15 @@ form2.php:
 		} else {
 			echo "Eres bajo ";
 		}
-
 ?>
 
-Para el boton radio $_REQUEST['radio1']=="resta" /////// $_REQUEST['radio1']=="suma"
+Para el boton radio $_REQUEST['radio1']=="resta" /// $_REQUEST['radio1']=="suma"
       
-
-
+Para las checkbox if (isset($_REQUEST['check1'])) /
+Para las checkbox if (isset($_REQUEST['check1']==true))
+			
+Para las checkbox if (!isset($_REQUEST['check1'])) La exclamacion es para marcar el no marcado //
+Para las checkbox if (!isset($_REQUEST['check1']==FALSE))
 
 
 
