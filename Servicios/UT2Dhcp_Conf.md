@@ -50,3 +50,13 @@ PRÁCTICA 2.3: CONFIGURACIÓN DEL SERVIDOR DHCP
 ![imagen](https://github.com/user-attachments/assets/cd409bae-10aa-47dd-bd42-2d757afcb02a)
 
 
+## Fichero dhcp.leases
+
+-ABRIR EL FICHERO /var/lib/dhcp/dhcpd.leases EN “DEBIAN SERVIDOR”
+
+- ¿APARECE LA ANOTACIÓN DE PRÉSTAMO DE TODAS LAS MÁQUINAS? Razona la respuesta.
+- 
+  ![imagen](https://github.com/user-attachments/assets/7e654391-44d1-4665-b1fc-d8a998a75414)
+
+
+Salen todas las ip que no tiene asignadas en dcp conf
