@@ -47,9 +47,9 @@
 |---------------|-----------------|-------------|
 |DHCPDISCOVER|Manda Un Broadcast en busca de un servidor DHCP|Cliete|
 |DHCPREQUEST|Una vez encontrado un servidor dhcp le solicita una IP|Cliente|
-|DHCPRELEASE|||
-|DHCPOFFER|||
-|DHCPACK|||
+|DHCPRELEASE|Se deshace de la IP que le habian dado|Cliente|
+|DHCPOFFER|Es la ofrenda de IP al cliente|Servidor|
+|DHCPACK|es un duplicado del mensaje DHCPOFFER, a excepción de un cambio en el campo de tipo de mensaje y esta config lo registra el cliente |servidor|
 |DHCPNAK|||
 
 **7. Significado de estos conceptos:**
