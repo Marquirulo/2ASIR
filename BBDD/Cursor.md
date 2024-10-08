@@ -5,11 +5,10 @@
     SQL%ROWCOUNT
 
 ### Bucle WHILE
-
-Declare 
-CURSOR C1 IS  SELECT * FROM t1  
-**registro** c1%ROWTYPE  
-
+        
+        Declare 
+        CURSOR C1 IS  SELECT * FROM t1  
+        **registro** c1%ROWTYPE  
     BEGIN  
     open c1;  
     fectch c1 into **registro**  ;
