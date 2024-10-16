@@ -35,7 +35,21 @@ $edades = array('a','b','c')
 ?>
 
 
+EJEMPLO 
 
+  <?php
+		$registros=array($_REQUEST['name1'] => $_REQUEST['edad1'],
+						$_REQUEST['name2'] => $_REQUEST['edad2'],
+						$_REQUEST['name3'] => $_REQUEST['edad3']);
+						
+		$mayor=0;
+		$nombremayor="a";
+		foreach ($registros as $nombre => $edad) {
+				 if ($registros[$nombre] > $mayor	)	{
+					 $nombremayor = $nombre;
+					 $mayor = $edad;
+
+		};
 
 
 
