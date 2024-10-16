@@ -29,8 +29,9 @@ $edades = array('a','b','c')
 ?>
 <?php
 // Para recorrerlo
-  foreach($registro as $clave=>$valor)
+  foreach($registro as $clave=>$valor) {
     echo "El array con indice $clave tiene el valor $valor";
+  }
 ?>
 
 
