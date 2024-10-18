@@ -54,8 +54,47 @@ EJEMPLO
 
 
 
+##FUCIONES##
+	
+<?php
+// Una Funcion devuelve 1 o 0 valores
+
+// No devuelve valor
+function Nombrefuncion($parametro,$parametro2)
+{
+	echo "<h1>";
+	echo $parametro;
+	echo "</h1>";
+}
+
+nombrefuncion("Primer titulo")
+echo "<br>"
+nombrefuncion("Segundo Titulo")
+
+?>
+
+	
+<?php
+// Devuelve un valor
+function promedio($valor1,$valor2)
+{
+	$pro=$valor1/$valor2;
+	return $pro; // UNa vez hace return no sigue con la Funcion
+}
+
+$v1=10;
+$v2=20;
+$p=promedio($v1,$v2);
+echo "el promedio es ".$p;
 
 
+?>
+
+##RESULTADO MISMA PAGINA##
+DEJAR EL ACTION DEL form VACIO
+DAR NAME AL BOTON SUBMIT
+
+	
 
 
-
+	
