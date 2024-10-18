@@ -93,8 +93,19 @@ echo "el promedio es ".$p;
 ##RESULTADO MISMA PAGINA##
 DEJAR EL ACTION DEL form VACIO
 DAR NAME AL BOTON SUBMIT
-
+PONER SIEMPRE
+	<script> //Previene el post Resubmit al refrescar el navegador
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+/*Para una solución más completa y valida tambien para get hay que utilizar el patrón de diseño
+Post/Redirect/Get (https://es.wikipedia.org/wiki/Post/Redirect/Get) */
+</script>
 	
+if(isset($_REQUEST['boton'])){
+		echo $_REQUEST['Nombre'];
+		echo $_REQUEST['edad']." Años";
+		}
 
 
 	
