@@ -3,7 +3,7 @@
     SQL%notFOUND 
     SQL%ISOPEN
     SQL%ROWCOUNT
-
+```sql
 ### Bucle WHILE
         
         Declare 
@@ -32,12 +32,12 @@
 
     declare c1 is select d.nombre, e.nombre, salario FROM dept d, emple e  
       where d.num=e.depno  
-    for update salario  
+    for update of salario  
     begin   
     for registro in c1 loop  
       update empleados   
         set salario = salario + 1000  
       where current of c1  
     end loop;  
-
+```
 
