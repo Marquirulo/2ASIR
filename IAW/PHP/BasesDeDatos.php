@@ -28,8 +28,34 @@ Create table alumnos (  nombre VARCHAR(20),
                         CodigoCurso DECIMAL(10,2)
 )
 
+EJEMPLO DURO
 
-
+	<form method="post" action="">
+		Inserta Codigo de Animal:
+		<input type="text" name="codigo"> <br>
+		Inserta Peso de Animal:
+		<input type="text" name="peso">	<br>
+		Selecciona el Tipo de animal:
+		<select name="tipo">
+			<option value="carnivoro">carnivoro
+			<option value="hervivoro">hervivoro
+			<option value="omnivoro">omnivoro
+		</select>
+		<input type="submit" value="enviar" name="boton">
+	</form>
+	
+	<?php
+	if(isset($_REQUEST['boton'])){
+		echo "BOTONAZO";
+		$codigo=$_REQUEST['codigo'];
+		$peso=$_REQUEST['peso'];
+		$tipo=$_REQUEST['tipo'];
+		$conexion=mysqli_connect("localhost","root","","animales") or die ("Hay problemas con la conexion");
+		$sql=mysqli_query($conexion,"insert into animal(codigo,tipo,peso) values ('$codigo',$peso,'$tipo')").mysqli_error($conexion);
+		mysqli_close($conexion);
+		
+	}
+?>
 
 
 
