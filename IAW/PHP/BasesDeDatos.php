@@ -57,7 +57,25 @@ EJEMPLO DURO
 	}
 ?>
 
+ ### CURSORES ###
+ <?php
+$registros=msqli_query($conexion "select codigo,mail... from TablaX)
 
+if ($registros // $registros != false) {
+	$reg=mysqli_fetch_array($registros);
+
+	while ($reg != false){
+
+		$reg=mysqli_fetch_array($registros);
+
+	}
+
+} else {
+
+	echo mysqli_error($conexion)
+
+}
+?>
 
 
 
