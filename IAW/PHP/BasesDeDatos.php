@@ -92,5 +92,42 @@ setcookie("color","ff0000",time() +60*60*24*365, "/" )
 
 $_COOKIE['nombrecookie']
 
+<html>
+<body>
 
+<form method="post" action="20.php">
+	<input type="radio" name="borde" value="10">1
+	<input type="radio" name="borde" value="20">2
+	<input type="radio" name="borde" value="30">3
+	<input type="submit" value="cokey" name="boton">
+</form>
+#######################20_1.php################################
+<table border=<?php
+	if(isset($_COOKIE['galleta'])){
+		echo $_COOKIE['galleta'];
+	}
+		?>
+>
+
+	<tr>
+		<td>2
+		<td>4
+	</tr>
+	<tr>
+		<td>3
+		<td>1
+	</tr>
+</table>
+
+</body>
+</html>
+###################################20.php############################
+<html>
+<body>
+<?php
+	setcookie("galleta",$_REQUEST['borde'],time()+30,"/");
+?>
+	<a href="20_1.php">VOLVE
+</body>
+</html>
 
