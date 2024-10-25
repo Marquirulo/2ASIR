@@ -90,7 +90,7 @@ EJEMP;
 
 setcookie("color","ff0000",time() +60*60*24*365, "/" )
 
-$_REQUEST['nombrecookie']
+$_COOKIE['nombrecookie']
 
 
 
