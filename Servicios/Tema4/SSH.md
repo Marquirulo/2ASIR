@@ -62,6 +62,48 @@ Nos desconectamos de Debian Servidor
 **Si**
 
 
+PRÁCTICA 4.15.- COMPROBANDO LA SEGURIDAD DEL CANAL:	
+
+4.15.1.- En Ubuntu Cliente lanzamos wireshark. Conectamos por ssh con Debian Servidor.
+Ejecutamos algún comando (ej: ls):	
+4.15.2.- Analizar el tráfico
+    ¿La información va encriptada?	
+**Va encriptado el usuario y la contraseña**
+
+
+PRÁCTICA 4.16.- PERMITIR CONECTAR POR SSH AL USUARIO root:	
+
+4.16.1.- Editamos el fichero de configuración ssh de Debian Servidor (/etc/ssh/sshd_config):
+➔	Cambiamos la siguiente directiva
+		PermitRootLogin yes
+4.16.2.- Conectamos a Debian Servidor (ssh) desde Debian Cliente:	
+		➔Primer método:
+		✔ssh root@IP
+		➔¿Que password pide?
+  **La de root del servidor**
+		➔Segundo método:
+		ssh IP
+		➔¿Que password nos pide?
+  **La del usuario de la sesion actual, si no existe en el servidor con la misma password no nos dejara conectarnos**
+➔	La sintaxis general del comando ssh es:
+ssh user@hostname(o IP) [comando]
+4.16.3.- Conectar a Debian Servidor (ssh) desde Debian Cliente (con los dos usuarios)añadiendo comando (ls):. .  
+![imagen](https://github.com/user-attachments/assets/7224061e-0beb-433e-891e-0159a3d46e9d)
+
+4.16.4.- Demostrar si se puede crear un archivo con los dos usuarios (root y alumno):	
+![imagen](https://github.com/user-attachments/assets/9b8ae27e-71ed-43cf-b0f7-21002256e333)
+
+![imagen](https://github.com/user-attachments/assets/152463e2-927b-466f-b6ea-efe69e9b8545)
+
+**Nos deja crearlos en los respectivos directorios en los que tienen permisos**
+
+4.16.5.- Comprobar que hace el comando ssh -l alumno tvp-sv00:	
+**-l especifica el login-name**
+
+4.16.6.- Comprobación del fichero /home/usuario/.ssh/known_hosts:	
+**No ha creado el ficher known_hosts porque no me he logeado en local con ninguno de los debian**
+
+
 
 
 
