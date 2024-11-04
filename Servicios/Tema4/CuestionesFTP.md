@@ -19,7 +19,7 @@
 9. Lista los archivos del directorio anterior,  y descárgate el primer fichero de la lista.
 ![imagen](https://github.com/user-attachments/assets/dd0b382a-5402-40e4-ac7b-2b40a17a148c)
 
-10. Intenta subir un fichero tuyo a dicho servidor, ¿Qué ocurre?
+10. Intenta subir un fichero tuyo a dicho servidor, ¿Qué ocurre?  
 ![imagen](https://github.com/user-attachments/assets/917597b4-c84d-4f7c-a584-bf519198db96)
 
 11. Intenta descargar un archivo en modo pasivo y otro en modo activo ¿Es posible? ¿Cuáles son las principales diferencias entre el modo pasivo y el activo?
