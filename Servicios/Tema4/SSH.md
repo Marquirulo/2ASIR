@@ -103,7 +103,39 @@ ssh user@hostname(o IP) [comando]
 4.16.6.- Comprobación del fichero /home/usuario/.ssh/known_hosts:	
 **No ha creado el ficher known_hosts porque no me he logeado en local con ninguno de los debian**
 
+4.17.1.- Borrar el contenido del fichero know de Debian Cliente, exceptuando una línea para poder comparar:
 
+4.17.2.- Editamos el fichero **/etc/ssh/ssh_config** de Debian Cliente y cambiamos la directiva HashKnownHosty reiniciamos el servicio:
+
+HashKnownHost no
+
+Desde Debian Cliente conectamos a Debian Servidor mediante ssh
+			la línea que nos ha generado ¿está encriptada? 
+
+![imagen](https://github.com/user-attachments/assets/d26bfbb3-e2bc-4715-b1ae-ec3154143f4c)
+
+PRÁCTICA 4.18.- MANIPULANDO known_hosts:
+
+4.18.1.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -F:
+ssh-keygen  -F  10.131.81.1  
+**Nos da informacion relacionada con la ip que le pasamos**  
+![imagen](https://github.com/user-attachments/assets/6e1adc30-7202-47c1-a885-ac898bae4275)
+
+4.18.2.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -R:
+ssh-keygen  -R  10.131.81.1
+**elimina la clave relacionada con el nombre que le pasas/IP**
+![imagen](https://github.com/user-attachments/assets/932ee17b-4d2b-4c74-9565-f1d894a8a53c)
+
+4.18.3.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -H:
+ssh-keygen  -H
+**Hashea todos los known_hosts**
+
+![imagen](https://github.com/user-attachments/assets/d6d1ad45-9ccd-4ead-ba0c-80156da2e858)
+
+
+4.18.4.- En Debian Servidor ejecutamos el siguiente comando:
+ssh-keygen  -B -f /etc/ssh/ssh_host_ecdsakey
+**te muestra el tipo de cifrado de x clave privada**
 
 
 
