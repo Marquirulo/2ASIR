@@ -123,7 +123,7 @@ ssh-keygen  -F  10.131.81.1
 
 4.18.2.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -R:
 ssh-keygen  -R  10.131.81.1
-**elimina la clave relacionada con el nombre que le pasas/IP**
+**elimina la clave relacionada con el nombre que le pasas/IP**  
 ![imagen](https://github.com/user-attachments/assets/932ee17b-4d2b-4c74-9565-f1d894a8a53c)
 
 4.18.3.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -H:
@@ -134,7 +134,7 @@ ssh-keygen  -H
 
 
 4.18.4.- En Debian Servidor ejecutamos el siguiente comando:
-ssh-keygen  -B -f /etc/ssh/ssh_host_ecdsakey
+ssh-keygen  -B -f /etc/ssh/ssh_host_ecdsakey  
 **te muestra el tipo de cifrado de x clave privada**
 
 
