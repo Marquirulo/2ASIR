@@ -205,10 +205,10 @@ carpeta /home/alumno/Descarga s de Ubuntu Cliente.
 
 9.- Realiza las cuestiones anteriores teniendo en cuenta que tu servidor es cliente del servidor de un compañero.
 
-**Le absorbo sus datos**
+**Le absorbo sus datos**  
 ![imagen](https://github.com/user-attachments/assets/3bfcbfa2-b25c-4888-acd4-dc0e42e61b22)
 
-**Le mando un ficherin**
+**Le mando un ficherin**  
 ![imagen](https://github.com/user-attachments/assets/71eb143a-a55c-4022-bc26-fd94bc4af4ad)
 
 
