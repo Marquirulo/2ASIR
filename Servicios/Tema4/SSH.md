@@ -117,7 +117,7 @@ Desde Debian Cliente conectamos a Debian Servidor mediante ssh
 PRÁCTICA 4.18.- MANIPULANDO known_hosts:
 
 4.18.1.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -F:
-ssh-keygen  -F  10.131.81.1  
+ssh-keygen -F 10.131.81.1  
 **Nos da informacion relacionada con la ip que le pasamos**  
 ![imagen](https://github.com/user-attachments/assets/6e1adc30-7202-47c1-a885-ac898bae4275)
 
@@ -127,15 +127,91 @@ ssh-keygen  -R  10.131.81.1
 ![imagen](https://github.com/user-attachments/assets/932ee17b-4d2b-4c74-9565-f1d894a8a53c)
 
 4.18.3.- En Debian Cliente comprobar la funcionalidad del comando ssh-keygen -H:
-ssh-keygen  -H
-**Hashea todos los known_hosts**
-
+ssh-keygen -H
+**Hashea todos los known_hosts**  
 ![imagen](https://github.com/user-attachments/assets/d6d1ad45-9ccd-4ead-ba0c-80156da2e858)
-
 
 4.18.4.- En Debian Servidor ejecutamos el siguiente comando:
 ssh-keygen  -B -f /etc/ssh/ssh_host_ecdsakey  
 **te muestra el tipo de cifrado de x clave privada**
+
+PRÁCTICA 4.19.- FTP SEGURO:
+
+➔ NOTA TEÓRICA:
+ssh proporciona un ftp seguro conocido como sftp
+El cliente siempre está disponible en Linux.
+El servidor se instala automáticamente con ssh
+
+4.19.1.- En Debian Cliente conectamos mediante el cliente sftp con Debian Servidor:
+
+	sftp IP
+
+4.19.2.- Comprobar los comandos con help:  
+![imagen](https://github.com/user-attachments/assets/2924b45c-f325-47c3-8859-d5fc40639f67)
+
+4.19.3.- Descargar algún fichero:  
+**get ficherin.txt**  
+4.19.4.- Subir algún fichero:  
+**put ficherin.txt**  
+4.19.5.- ¿ sftp utiliza la misma infraestructura que ssh ?  
+**utiliza la conexion ssh para darte un entorno ftp**   
+![imagen](https://github.com/user-attachments/assets/421d2481-5240-4913-9997-f3697527282e)
+
+###SCP###
+
+scp archivo usuario@host:rutaremota
+
+scp usuario@host:rutaremota/archivoremoto rutalocal
+
+
+1.- En Debian Servidor en el directorio personal del usuario alumno, creamos un fichero llamado copiame.tx
+
+
+2.- Desde Debian Cliente conectamos con Debian Servidor mediante scp  y copiamos el fichero que hemos creado en el paso anterior y lo renombramos como copiame1.txt.
+
+![imagen](https://github.com/user-attachments/assets/a3699613-b172-43cf-90fb-6891f7f5a3e4)
+
+
+3.- En Debian Cliente vamos a copiar el fichero /etc/network/interfaces a la carpeta personal del usuario root de Debian Servidor:
+
+![imagen](https://github.com/user-attachments/assets/4ea8cd88-77ae-4d1b-8a3d-75044412c21b)
+
+
+4.- Desde Debian Cliente copiamos un fichero al directorio /home/alumno/Documentos de Debian Servidor, para ello antes debemos crear la carpeta Documentos.
+
+![imagen](https://github.com/user-attachments/assets/2384a2fc-0ee1-4948-94a2-d8f808eaf676)
+
+5.- Desde Debian Cliente seleccionamos el fichero a copiar /etc/passwd y
+ejecutamos la copia con scp a / home/alumno/Documentos de Debian Servidor:
+
+![imagen](https://github.com/user-attachments/assets/33e7edf2-54bc-47fd-9c46-b6d4ba9c9227)
+
+6.- Desde Debian Cliente, copiamos el mismo fichero pero cambiándole el
+nombre a passwd1.
+
+![imagen](https://github.com/user-attachments/assets/1332286a-3421-461e-b8ce-805f4bbf7d5c)
+
+7.- Desde Ubuntu Cliente vamos a copiar varios archivos a Debian Servidor
+utilizando el comodín *.
+
+![imagen](https://github.com/user-attachments/assets/af99be91-1d70-45de-b717-28767d5c8b39)
+
+
+8.- Ahora vamos a transferir esos mismos ficheros desde Debian Servidor a la
+carpeta /home/alumno/Descarga s de Ubuntu Cliente.
+
+![imagen](https://github.com/user-attachments/assets/ab6e3d4b-3e6f-40c4-b0ee-d345ba037f0d)
+
+
+9.- Realiza las cuestiones anteriores teniendo en cuenta que tu servidor es cliente del servidor de un compañero.
+
+**Le absorbo sus datos**
+![imagen](https://github.com/user-attachments/assets/3bfcbfa2-b25c-4888-acd4-dc0e42e61b22)
+
+**Le mando un ficherin**
+![imagen](https://github.com/user-attachments/assets/71eb143a-a55c-4022-bc26-fd94bc4af4ad)
+
+
 
 
 
