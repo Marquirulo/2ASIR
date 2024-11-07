@@ -239,6 +239,18 @@ carpeta /home/alumno/Descarga s de Ubuntu Cliente.
 ![imagen](https://github.com/user-attachments/assets/d50401af-4ff9-4d96-8037-b942b54e38c2)
 
 
+###PUERTO-PROTOCOLO SSH###
+
+.- El servicio SSH por defecto escucha en el puerto 22. Modifícalo para que arranque en el puerto 10022 (u otro) y averigua cuál sería el comando utilizado para poder acceder al servidor. (ayuda: man ssh).  
+![imagen](https://github.com/user-attachments/assets/684f7825-bb95-41d2-a1e6-ba6ee3d2ffaa)
+
+![imagen](https://github.com/user-attachments/assets/1be00f30-cd98-4851-9a60-a79f96778da4)
+
+.- Cambia los protocolos SSH en cliente y servidor y comprueba si se permite la conexión. Por ejemplo, que el cliente use la versión 2 del protocolo y el servidor la 1.  
+**YA NO SE SOPORTA ESTO XD**
+**De version superio a inferior deja al contrario no**  
+![imagen](https://github.com/user-attachments/assets/4f911ccb-d4bb-4434-8ceb-b8839bcda93a)
+
 
 
 
