@@ -211,6 +211,33 @@ carpeta /home/alumno/Descarga s de Ubuntu Cliente.
 **Le mando un ficherin**  
 ![imagen](https://github.com/user-attachments/assets/71eb143a-a55c-4022-bc26-fd94bc4af4ad)
 
+##SCP II##
+
+1.-Copiar un archivo de un servidor remoto a otro servidor remoto:
+**No deja porque hay que automatizat el paso de autentificacion entre servidores**  
+
+		server$eval $(ssh-agent -s)
+		server$ssh-keygen -t ecdsa
+		server$ssh-copy-id root@servidorremoto
+		cliente$scp root@servidor:/x root@servidorremoto
+
+2.- Copiar un único archivo de un servidor remoto al mismo servidor remoto, pero en otro directorio:  
+![imagen](https://github.com/user-attachments/assets/716a982f-801c-4e44-83db-e441a5a55cc0)
+
+
+3.- Copiar todos los archivos con una extensión determinada, indica donde están los archivos origen:  
+![imagen](https://github.com/user-attachments/assets/2b4ef5ac-44f5-47e8-a1cb-ccc92a292d3d)
+
+4.- Copiar todos los archivos de un directorio a un servidor remoto:  
+![imagen](https://github.com/user-attachments/assets/5885b526-78f6-4e10-830a-babfadddd023)
+
+
+5.- Copiar todos los archivos de un directorio recursivamente al servidor remoto:  
+![imagen](https://github.com/user-attachments/assets/8add3f57-c25b-477c-be2c-ac8bce859d32)
+
+6.- Copiar un directorio y todo su contenido a un directorio en el servidor remoto:
+![imagen](https://github.com/user-attachments/assets/d50401af-4ff9-4d96-8037-b942b54e38c2)
+
 
 
 
