@@ -40,5 +40,3 @@ Es un sistema multiusuario (Gestion de usuarios de toda la vida de DIOS que porc
   DBA_SYS_PRIVS  PRIVILEGIOS DEL SISTEMA ASIGNADOS AL USUARIO O ROL  
 
 
-
-
