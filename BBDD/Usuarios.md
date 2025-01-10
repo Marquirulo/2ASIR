@@ -1,4 +1,5 @@
-# SEGA
+# HAY UN FICHERO CON UN MILLON DE EJEMPLOS BIEN EXPLICAO
+
 Lo vamos a hacer sobre ORACLE  
 
 Es un sistema multiusuario (Gestion de usuarios de toda la vida de DIOS que porciento es Español)  
