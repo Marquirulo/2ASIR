@@ -3,8 +3,8 @@
 Lo vamos a hacer sobre ORACLE  
 
 Es un sistema multiusuario (Gestion de usuarios de toda la vida de DIOS que porciento es Español)  
-  Esquemas
-  SYS => root chungo
+  Esquemas  
+  SYS => root chungo  
   SYSTEM => Tareas administrativas
 
 ## Creacion de usuarios
