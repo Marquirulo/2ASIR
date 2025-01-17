@@ -72,7 +72,21 @@ c a s a
     }
 
 ## getElementsByTagName(p)
-  Hace un array de todos los elementos que recoja del HTML
-  
-    var x = getElementsByTagName(p);    
-    document.write= (x[0].innerHTML + "NOSEQUE");
+Hace un array de todos los elementos que recoja del HTML
+
+        var x = getElementsByTagName(p);    
+        document.write= (x[0].innerHTML + "NOSEQUE");
+
+## getElementsByClassName
+  Hace un array con los elementos por su clase CSS
+
+      <p class="Intro"> INTROOOOO
+      <script>
+          var y = document.getElementsByClassName("Intro)
+          document.write y[0].innerHTML --> INTROOOOOO
+          
+##cambiar propiedades
+
+            var x = getElementsByTagName(p);    
+            x[0].style.color="red"; ---> HTML DOM styles
+            x[0].align="right";
