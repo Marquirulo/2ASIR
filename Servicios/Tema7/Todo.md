@@ -216,7 +216,9 @@ alumno2@mailtvp.com:
 1.3.- Envía un mensaje desde tu máquina debian servidor al usuario alumno del debian servidor  de tu compañero. ¿Funciona?
 enviado:  
 ![imagen](https://github.com/user-attachments/assets/c2fa7df5-96c0-4655-b312-e7cdb0c16193)
+
 recibido:  
+
 ![imagen](https://github.com/user-attachments/assets/a65a9725-498a-4a90-b151-5d0ba5929eb3)
 
 
