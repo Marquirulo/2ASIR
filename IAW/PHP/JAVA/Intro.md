@@ -63,13 +63,28 @@ c a s a
       document.write("<p>" + "Texto del titulo es: " + x.innerHTML + "</p>")
     /script
 
-## Eventos
+# Eventos
 
+## onclick
     <button onclick="funcion()">BOTON<button>
     <script>
     funcion(){
       COSAS
     }
+
+##onmouseover onmouseout
+
+    <td onmouseover="pintar(this)">
+    function pintar(obj){
+        blablabla
+    }
+
+## onchange
+
+    funcion
+    var x = cojo elemento por id
+    x.value=x.value.toUpperCase
+    input type=text i=algo onchange="funcion()" value="Dame tu nombre perro"
 
 ## getElementsByTagName(p)
 Hace un array de todos los elementos que recoja del HTML
@@ -90,3 +105,50 @@ Hace un array de todos los elementos que recoja del HTML
             var x = getElementsByTagName(p);    
             x[0].style.color="red"; ---> HTML DOM styles
             x[0].align="right";
+
+
+
+## document.write = pa escribir sin esto
+
+    *boton con funcion onclick*
+    <cosas html>
+    funcion con getelement.inner="loquesea"
+    <span id="demo"><span>
+
+## formularios javascript
+
+    function algo(){
+        var x = document.form1.nombre.value
+        alert('Has peusto el nombre' + x )
+    }
+    form name="form1"
+        input type text name="nombre"
+        input boton onclick=algo() value="confirmar"
+    /form
+
+## asignar evento dinamicamente
+
+    documen.getelementbyid(BOTON).onclick=function(){displayDate()};
+    function displayDate(){
+        document.getelementbydid("demo").innerHTML=Date();
+    }
+    <p id=demo>
+
+## radio botones / CHECKBOX
+
+    NOTA:devuelve TRUE or FALSE
+    
+    funcion
+    if document.form1.radiobotones[0].checked {
+    blala
+    }
+    
+    if document.form1.radiobotones[1].checked {
+    otracosa
+    }
+    form name=form1
+
+    input type=radio name=radiobotones>Sin estudios
+    input type=radio name=radiobotones>Estudio
+    input type=boton value=haceralgo onclick=funcion()
+    
