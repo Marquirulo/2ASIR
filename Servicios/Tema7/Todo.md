@@ -225,3 +225,22 @@ recibido:
 1.4.-Envía un mensaje desde tu máquina debian cliente al usuario alumno del debian servidor  de tu compañero. ¿Funciona?
 
 
+
+## PRÁCTICA 7.8. CAPTURA DE PAQUETES UTILIZANDO WIRESHARD
+
+
+En Ubuntu, con wireshark funcionado:
+
+1. Como alumno, utilizando nc, envia un mensaje a alumno2 de Debian Servidor (alumno2@mailtvp.com), ¿aparecen  paquetes smtp, pop…?
+
+![imagen](https://github.com/user-attachments/assets/4c30a621-a230-4826-aaa1-c21d028f33fb)
+
+2. Como alumno, utilizando mail, envia un mensaje a alumno de Debian Cliente (alumno@mailtvpcl.com), ¿Funciona? ¿aparecen  paquetes smtp, pop…?
+
+
+3. ¿Puedes conectarte al servidor de correos de Debian Servidor y enviar un correo a un usuario de Debian Cliente? ¿Y al contrario?
+
+
+
+
+
