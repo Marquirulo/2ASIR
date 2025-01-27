@@ -235,11 +235,13 @@ En Ubuntu, con wireshark funcionado:
 
 ![imagen](https://github.com/user-attachments/assets/4c30a621-a230-4826-aaa1-c21d028f33fb)
 
-2. Como alumno, utilizando mail, envia un mensaje a alumno de Debian Cliente (alumno@mailtvpcl.com), ¿Funciona? ¿aparecen  paquetes smtp, pop…?
+2. Como alumno, utilizando mail, envia un mensaje a alumno de Debian Cliente (alumno@mailtvpcl.com), ¿Funciona? ¿aparecen  paquetes smtp, pop**…?
 
+**No Deja**
 
 3. ¿Puedes conectarte al servidor de correos de Debian Servidor y enviar un correo a un usuario de Debian Cliente? ¿Y al contrario?
 
+**deja del cliente al servidor pero no al reves**
 
 
 
