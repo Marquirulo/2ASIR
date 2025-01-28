@@ -243,6 +243,56 @@ En Ubuntu, con wireshark funcionado:
 
 **deja del cliente al servidor pero no al reves**
 
+## PRÁCTICA 7.9.1- INSTALAR Y CONFIGURAR SERVIDOR DE CORREO EN UBUNTU
 
+1.- En la máquina Ubuntu Cliente, instalamos el paquete postfix:
+
+Elegir: sitio internet
+Definimos el dominio
+
+2.- Reconfigurar el archivo /etc/postfix/main.cf:
+
+3.- Instalamos  squirrelmail:
+
+descarga:  
+![imagen](https://github.com/user-attachments/assets/692c4cc2-558d-4909-a49c-a0b2fe747330)
+
+Instalamos apache, descomprimimos el squirrel y 
+
+![imagen](https://github.com/user-attachments/assets/5baa92b0-0092-426f-afd6-8f4cb4c281b6)
+
+Permisos:
+
+![imagen](https://github.com/user-attachments/assets/210faec4-af4f-415a-ae28-beb25664e87c)
+
+4.- Configuramos squirrelmail:
+**sudo perl /var/www/html/squirrelmail/config/conf.pl**
+
+![imagen](https://github.com/user-attachments/assets/185d0c10-d991-48bc-972a-5691f61bfe28)
+
+![imagen](https://github.com/user-attachments/assets/4be9ca94-5afa-4c63-91e1-aa64c91a28bf)
+
+
+Instalamos PHP,Mysql
+
+5.-Instalar y ejecutamos squirrelmail utilizando apache desde el navegador para entrar en el correo.
+
+6.- Creamos dos usuarios para hacer pruebas (alu1 y alu2):
+
+➔ Hacemos pruebas de envío y recepción local:
+✔ La estructura básica de postifix sería:
+telnet localhost 25
+mail from: alu1
+rcpt to: alu2
+data
+subject: Prueba de correo POSTFIX
+from: alu1
+to: alu2
+Esta es una prueba de funcionamiento de correo POSTFIX
+.
+Quit
+
+Vamos a utilizar squirrelmail para ver la recepción del correo enviado por
+alu1 a alu2 y le respondemos:
 
 
