@@ -150,5 +150,16 @@ Hace un array de todos los elementos que recoja del HTML
 
     input type=radio name=radiobotones>Sin estudios
     input type=radio name=radiobotones>Estudio
-    input type=boton value=haceralgo onclick=funcion()
+    input type=boton value=haceralgo onclick=funcion()>
+
+## window
+Representa la ventana del navegador, es un objeto global
+
+    window.promot("Ingrese valor"); Es lo mismo que promt("Ingreasa valor")
+    window.location/history/navegator/screen
+
+## Archivo externo
+
+    <script src="./java.js"></script>
+    
     
