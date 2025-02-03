@@ -250,30 +250,27 @@ En Ubuntu, con wireshark funcionado:
 Elegir: sitio internet
 Definimos el dominio
 
-2.- Reconfigurar el archivo /etc/postfix/main.cf:
+2.- Reconfigurar el archivo /etc/postfix/main.cf:  
+	**dominio:grabanzo.com**
+3.- Instalamos  squirrelmail:  
 
-3.- Instalamos  squirrelmail:
+![imagen](https://github.com/user-attachments/assets/b115cecc-4baf-4b88-85d6-0560e6091cd4)
 
-descarga:  
-![imagen](https://github.com/user-attachments/assets/692c4cc2-558d-4909-a49c-a0b2fe747330)
+Buzones:  
 
-Instalamos apache, descomprimimos el squirrel y 
+![imagen](https://github.com/user-attachments/assets/660be721-08c8-4903-b767-b35a15633edf)
 
-![imagen](https://github.com/user-attachments/assets/5baa92b0-0092-426f-afd6-8f4cb4c281b6)
-
-Permisos:
-
-![imagen](https://github.com/user-attachments/assets/210faec4-af4f-415a-ae28-beb25664e87c)
 
 4.- Configuramos squirrelmail:
 **sudo perl /var/www/html/squirrelmail/config/conf.pl**
 
-![imagen](https://github.com/user-attachments/assets/185d0c10-d991-48bc-972a-5691f61bfe28)
+elegimos 2 Server Settings:
 
-![imagen](https://github.com/user-attachments/assets/4be9ca94-5afa-4c63-91e1-aa64c91a28bf)
+![imagen](https://github.com/user-attachments/assets/965d9d8f-0f03-42c2-aa61-8a067bdd3be5)
 
+![imagen](https://github.com/user-attachments/assets/85841d6e-614b-4512-8e7d-464b91dabbe5)
 
-Instalamos PHP,Mysql
+![imagen](https://github.com/user-attachments/assets/10835858-49a2-4bae-b3d6-be05b7315112)
 
 5.-Instalar y ejecutamos squirrelmail utilizando apache desde el navegador para entrar en el correo.
 
@@ -291,6 +288,12 @@ to: alu2
 Esta es una prueba de funcionamiento de correo POSTFIX
 .
 Quit
+
+![imagen](https://github.com/user-attachments/assets/30ea81af-01af-4e98-898d-854d6f21201a)
+
+
+![imagen](https://github.com/user-attachments/assets/077f09a3-fb89-40fd-a9ba-3bbe6347777b)
+
 
 Vamos a utilizar squirrelmail para ver la recepción del correo enviado por
 alu1 a alu2 y le respondemos:
