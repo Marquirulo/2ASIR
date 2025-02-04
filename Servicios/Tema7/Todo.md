@@ -252,6 +252,7 @@ Definimos el dominio
 
 2.- Reconfigurar el archivo /etc/postfix/main.cf:  
 	**dominio:grabanzo.com**
+ 
 3.- Instalamos  squirrelmail:  
 
 ![imagen](https://github.com/user-attachments/assets/b115cecc-4baf-4b88-85d6-0560e6091cd4)
