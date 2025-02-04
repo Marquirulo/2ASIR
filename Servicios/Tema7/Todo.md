@@ -303,4 +303,6 @@ Quit
 Vamos a utilizar squirrelmail para ver la recepción del correo enviado por
 alu1 a alu2 y le respondemos:
 
+![imagen](https://github.com/user-attachments/assets/7c31a087-2a96-485b-bef2-75095c7354c3)
+
 
