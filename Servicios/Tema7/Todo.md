@@ -247,8 +247,12 @@ En Ubuntu, con wireshark funcionado:
 
 1.- En la máquina Ubuntu Cliente, instalamos el paquete postfix:
 
-Elegir: sitio internet
+Elegir: sitio internet  
+![imagen](https://github.com/user-attachments/assets/68341f28-5414-4ed7-823f-f50f026c9890)
+
 Definimos el dominio
+
+![imagen](https://github.com/user-attachments/assets/e78f2f10-0f9d-47a2-b7b9-c4edf502ce8c)
 
 2.- Reconfigurar el archivo /etc/postfix/main.cf:  
 	**dominio:grabanzo.com**
