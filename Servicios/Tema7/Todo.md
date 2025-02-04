@@ -261,7 +261,7 @@ Buzones:
 ![imagen](https://github.com/user-attachments/assets/660be721-08c8-4903-b767-b35a15633edf)
 
 
-4.- Configuramos squirrelmail:
+4.- Configuramos squirrelmail:  
 **sudo perl /var/www/html/squirrelmail/config/conf.pl**
 
 elegimos 2 Server Settings:
