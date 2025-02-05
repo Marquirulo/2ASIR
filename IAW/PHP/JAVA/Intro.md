@@ -37,16 +37,16 @@
 
 ## Strings
 
-let x = "casa";
-let x = 'casa';
-
-let Y = x.length sera = 4
-let y = x.toUpperCase ---> Pasa a mayusculas
-let y = x.toLowerCase ---> Pasa a minuscula
-let y = x.substring(1,3) 3-1=2 = as
-
-0 1 2 3
-c a s a
+        let x = "casa";
+        let x = 'casa';
+        
+        let Y = x.length sera = 4
+        let y = x.toUpperCase ---> Pasa a mayusculas
+        let y = x.toLowerCase ---> Pasa a minuscula
+        let y = x.substring(1,3) 3-1=2 = as
+        
+        0 1 2 3
+        c a s a
 
 
 ## HTML DOM tree
