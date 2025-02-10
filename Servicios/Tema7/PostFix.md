@@ -30,9 +30,9 @@ elegimos 2 Server Settings:
 
 ![imagen](https://github.com/user-attachments/assets/85841d6e-614b-4512-8e7d-464b91dabbe5)
 
-![imagen](https://github.com/user-attachments/assets/10835858-49a2-4bae-b3d6-be05b7315112)
-
 5.-Instalar y ejecutamos squirrelmail utilizando apache desde el navegador para entrar en el correo.
+
+![imagen](https://github.com/user-attachments/assets/10835858-49a2-4bae-b3d6-be05b7315112)
 
 6.- Creamos dos usuarios para hacer pruebas (alu1 y alu2):
 
