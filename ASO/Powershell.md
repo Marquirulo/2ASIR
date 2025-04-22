@@ -232,3 +232,59 @@ Get-WinEvent -Listlog * # Sin el * los logs con 0 entradas dan errores
 	-FilterHashtable @{LogName='system'} # permite filtrar logs grandes
 Para filtrar por fechas es recomendable usar variables y Get-date
 ```
+```PS1
+# Los CmdLets con estructura *Net*
+Get-NetAdapter
+Get-NetIPConfiguration
+Get-NetIPAddress
+Set-NetIpaddress
+	-interfaceIndex # Para filtrar por índice de interfaz
+	-adressFamily # IPv4, IPv6
+	-ipAddress # Dirección ip
+	-PrefixLength # Máscara de red
+New-NetIpaddress # Para modificar el GW
+Set-NetIPInterface
+	-dhcp # enabled, disabled
+	-interfaceIndex # Para filtrar por índice de interfaz. Se puede pasar un array
+Set-DnsClientServerAddress
+	-ServerAddresses # Direcciones ip de los servidores DNS. Se puede pasar un array
+Get-NetAdapter (equivalente a ipconfig)
+	-IncludeHidden # Para incluir los ocultos
+	-InterfaceIndex # Para filtrar por índice de interfaz. Se puede pasar un array
+	-Physical # Devuelve todos los adaptadores físicos
+Test-NetConnection (como el ping)
+	-ComputerName: nombre DNS o dirección ip objetivo
+	-Port: número de puerto sobre el que comprobar conectividad
+	-Traceroute: para ejecutar Tracert para comprobar la conectividad del host remoto (Solo en PS Core)
+	-ResolveDestination: si se usa junto con -TraceRoute, PowerShell intenta mostrar el nombre de todos los nodos de la ruta hacia el destino.
+	-Hops: número de saltos de tracert
+	-Repeat: para mandar solicitudes de forma sostenida
+Test-Connection
+Resolve-dnsname equivalente a nslookup
+Get-NetRoute # Equivalente a route
+	-Interfaceindex
+	-Interfacealias
+Get-NetTCPConnection # Equivalente a netstat
+Get-DnsClientCache # Muestra la caché del cliente DNS
+Clear-DnsClientCache # Borra la caché del cliente DNS
+```
+##### Comandos remotos
+Utiliza los servicios winrm, WS-Management y SOAP
+```ps1
+winrm quickconfig #Configura la ejecucion remota
+Test-WSMan # Comprueba si está habilitado winrm
+# Comandos preparados para ejecucion remota
+Get-Command -ParameterName ComputerName
+
+# Crear conexión remota
+New-PSSession -computername <nombre_maquinaremota> -credential <usuario>\<contraseña>
+# Iniciar una sesión remota
+Enter-PSSession <nombre_maquinaremota>
+# Finalizar sesión remota
+Exit-PSSession
+
+# Ejecutar comandos en remoto sin sesión interactiva (como ssh -c)
+Invoke-Command -ComputerName <maquina_1, ..., maquina_N> {cmdlet a ejecutar}
+Invoke-Command -ComputerName <maquina_1, ..., maquina_N> -FilePath <ruta_script>
+Invoke-Command -Session $sesion 
+```
